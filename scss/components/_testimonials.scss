@@ -1,0 +1,49 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+        margin-bottom: 4rem;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 .5rem;
+
+            .testimonials-card {
+                text-align: center;
+                border: 1px solid $color-gray;
+                border-radius: .5rem;
+                padding: 2rem 1rem;
+            
+                &-header {
+                    @include flex(null, center, center, 1rem);
+            
+                    img {
+                        width: 60px;
+                        border-radius: 50%;
+                    }
+            
+                    .testimonials-card-user {
+                        text-transform: capitalize;
+                        font-size: 1.2rem;
+                    }
+                }
+            
+                &-paragraph {
+                    margin: 2.5rem 0;
+                }
+            
+                &-stars {
+                    color: $color-yellow;
+                    @include flex(null, center, center, .5rem);
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

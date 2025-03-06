@@ -1,0 +1,42 @@
+.specifications-table {
+    table {
+        width: 50%;
+        overflow: hidden;
+        text-align: left;
+        border-collapse: collapse;
+        border-radius: .5rem .5rem 0 0;
+        margin: 0 auto;
+
+        thead {
+            background-color: $color-gray;
+            color: $color-light;
+
+            tr {
+                th {
+                    border: 1px solid $color-dark;
+                    padding: .5rem;
+                }
+            }
+        }
+
+        tbody {
+            border: 1px solid $color-gray;
+
+            tr {
+                td {
+                    border: 1px solid $color-dark;
+                    padding: .5rem;
+
+                    &.td-title {
+                        color: $color-dark;
+                        font-weight: 600;
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-color: $color-light-gray;
+                }
+            }
+        }
+    }
+}

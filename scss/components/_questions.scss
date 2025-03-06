@@ -1,0 +1,40 @@
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+
+    &-btn {
+        width: 100%;
+        background-color: transparent;
+        @include flex(null, space-between, center, null);
+        font-size: 1.2rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: none;
+        border-radius: .5rem;
+        padding: 1rem;
+        cursor: pointer;
+
+        span {
+            font-weight: 500;
+            padding-right: .5rem;
+        }
+
+        i {
+            font-size: 1.5rem;
+            transition: transform .3s ease;
+        }
+    }
+
+    .accordion-resp {
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: .5rem;
+        margin-top: 2rem;
+        transition: max-height .3s ease-in-out;
+
+        p {
+            padding: 1rem;
+        }
+    }
+}
